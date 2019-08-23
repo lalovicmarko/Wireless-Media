@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wireless Media</title>
+	<link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<img src="img/logo.png" alt="" class="logo">
+		<ul class="menu-big">
+			<li class="home">
+				<a href="#">HOME</a>
+			</li>
+			<li>/</li>
+			<li class="about-us">
+				<a href="#">About us</a>
+			</li>
+			<li>/</li>
+			<li class="our-work"><a href="#">our work</a></li>
+			<li>/</li>
+			<li class="contact"><a href="#">contact</a></li>
+		</ul>
+		<ul class="menu-small">
+			<li class="home">
+				<a href="#">
+					<i class="fas fa-home"></i>
+				</a>
+			</li>
+			<li class="about-us">
+				<a href="#">
+					<i class="fas fa-question-circle"></i>
+				</a>
+			</li>
+			<li class="our-work">
+				<a href="#">
+					<i class="fas fa-graduation-cap"></i>
+				</a>
+			</li>
+			<li class="contact">
+				<a href="#">
+					<i class="fas fa-envelope"></i>
+				</a>
+			</li>    
+		</ul>
+		<ul  class="search">
+			<li class="burger-button" onclick="burgerMenu()">
+				<i class="fa fa-bars"  id="burger-button"></i>
+			</li>
+			<li onclick="search()">     
+				<i class="fa fa-search" id="search-button"></i>
+			</li>
+		</ul>
+	</header>
+	
+	<ul id="input-search">
+		<input type="text">	
+	</ul>
+	
+	<ul class="bottom-nav-responsive" id="burger">
+		<li style="background-color: #bbd547">HOME</li>
+		<li style="background-color: #81b36e">About us</li>
+		<li style="background-color: #429099">our work</li>
+		<li style="background-color: #1375b8">Contact</li>
+	</ul>	
+		
+	<div class="line"></div>
+	
+	<div class="slideshow-container">
+		
+		<div class="my-slides">
+			<div class="slider-content">
+				<div class="icon-part">
+					<img src="img/slider-icon.png" style="width: 25vw;">
+				</div>
+				<div class="text-part">
+					<p class="slider-text">Lorem ipsum dolor sit</p>
+				</div>
+			</div>
+			<img class="slider-background" src="img/img.png">
+		</div>
+		
+		<div class="my-slides">
+			<div class="slider-content">
+				<div class="icon-part">
+					<img src="img/slider-icon.png" style="width: 25vw;">
+				</div>
+				<div class="text-part">
+					<p class="slider-text">Lorem ipsum dolor sit</p>
+				</div>
+			</div>
+			<img class="slider-background" src="img/img2.jpg">
+		</div>
+
+		<div class="my-slides">
+			<div class="slider-content">
+				<div class="icon-part">
+					<img src="img/slider-icon.png" style="width: 25vw;">
+				</div>
+				<div class="text-part">
+					<p class="slider-text">Lorem ipsum dolor sit</p>
+				</div>
+			</div>
+			<img class="slider-background" src="img/img3.jpg">
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	
+	<br>
+	
+	<div class="dots-slider">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+
+	<div class="text-part-small">
+		<p class="slider-text">Lorem ipsum dolor sit</p>
+	</div>
+	
+	<div class="main-content">
+		
+		<p class="main-content-text">WHO WE ARE</p>
+		
+		<div class="main-conent-part">
+			
+			<div class="left">
+				<i class="fas fa-graduation-cap"></i>
+			</div>
+			
+			<div style="float: right; ">
+				<p class="title">Lorem ipsum</p>
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. </p>
+				<p class="show-more">show more</p>
+			</div>
+			
+			<div class="left">
+				<i class="fas fa-thumbs-up"></i>
+			</div>
+			
+			<div style="float: right; ">
+				<p class="title">Lorem ipsum</p>
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. </p>
+				<p class="show-more">show more</p>
+			</div>	
+		</div>
+		
+		<p class="main-content-text">WHAT WE DO</p>
+		
+		<div class="what-we-do">
+
+			<div class="left">
+				<i class="fa fa-calculator"></i>
+			</div>
+						
+			<div class="left">
+				<i class="fas fa-cloud"></i>
+			</div>
+			
+			<div class="left">
+				<i class="far fa-clock"></i>
+			</div>
+			
+			<div class="left">
+				<i class="fas fa-heart"></i>
+			</div>
+		</div>	
+	</div>
+
+	<footer>
+		<div class="social">
+			<i class="fab fa-facebook-f"></i>
+			<i class="fab fa-twitter"></i>
+			<i class="fas fa-envelope"></i>
+		</div>
+		
+		<div class="footer-nav">
+			<ul>
+				<li class="home">
+					<a href="#">HOME</a>
+				</li>
+				<li class="about-us">
+					<a href="#">About us</a>
+				</li>
+			<li class="our-work"><a href="#">our work</a></li>
+			<li class="contact"><a href="#">contact</a></li>
+			</ul>
+		</div>
+			
+		<div class="social">
+			<i class="fas fa-long-arrow-alt-up back-to-top" onclick="topFunction()"></i>
+		</div>
+	</footer>
+	
+	<script src="js/main.js"></script>
+	
+</body>
+</html>
